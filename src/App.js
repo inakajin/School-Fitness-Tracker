@@ -6,6 +6,8 @@ import './App.css';
 import Header from './Header';
 import SessionHeader from './SessionHeader';
 import StudentData from './StudentData';
+import PreSession from './PreSession';
+import PostSession from './PostSession';
 
 class App extends Component {
   render() {
@@ -19,6 +21,16 @@ class App extends Component {
         description={"Please complete the following questions about you."}
         />
         <StudentData
+        onChange={this.onChange}
+        />
+        <PreSession
+        onChange={this.onChange}
+        />
+        <SessionHeader
+        title={"POST-SESSION"}
+        description={"This section refers to how you felt after the activity."}
+        />
+        <PostSession
         onChange={this.onChange}
         />
       </div>

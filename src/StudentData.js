@@ -32,7 +32,7 @@ class StudentData extends Component {
 
                 <label>
                     Select Your School:
-                    <select value={this.props.onChange} onChange={this.props.onChange}>
+                    <select value={1} onChange={this.props.onChange}>
                         <option value="School A">School A</option>
                         <option value="School B">School B</option>
                         <option value="School C">School C</option>

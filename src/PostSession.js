@@ -29,25 +29,25 @@ class PostSession extends Component {
                 <label>
                     After participating in the activity, I would do it again on my own:
                     <input onChange={this.props.onChange} type="radio" value="option1"  
-                      onChange={this.handleOptionChange} />
+                       />
                       Strongly Agree
                 </label>
           
                 <label>
                 <input onChange={this.props.onChange} type="radio" value="option2"  
-                onChange={this.handleOptionChange} />
+                />
                 Disagree
                 </label>
 
                 <label>
                 <input onChange={this.props.onChange} type="radio" value="option3"  
-                onChange={this.handleOptionChange} />
+                 />
                 Strongly Disagree
                 </label>
 
                 <label>
                 <input onChange={this.props.onChange} type="radio" value="option4"  
-                onChange={this.handleOptionChange} />
+                 />
                 Very Bad
                 </label>
                 </div>

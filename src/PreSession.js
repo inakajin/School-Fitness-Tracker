@@ -19,25 +19,25 @@ class PreSession extends Component {
                 <label>
                     Please select the session activity you participated in today:
                     <input onChange={this.props.onChange} type="radio" value="option1"  
-                      onChange={this.handleOptionChange} />
+                       />
                       Basketball
                 </label>
           
                 <label>
                 <input onChange={this.props.onChange} type="radio" value="option2"  
-                onChange={this.handleOptionChange} />
+                />
                 Yoga
                 </label>
 
                 <label>
                 <input onChange={this.props.onChange} type="radio" value="option3"  
-                onChange={this.handleOptionChange} />
+                />
                 Swimming
                 </label>
 
                 <label>
                 <input onChange={this.props.onChange} type="radio" value="option4"  
-                onChange={this.handleOptionChange} />
+                />
                 Martial Arts
                 </label>
                 </div>
@@ -47,25 +47,25 @@ class PreSession extends Component {
                     This section refers to how you felt before participating in the activity today:
                     Today, I felt:
                     <input onChange={this.props.onChange} type="radio" value="option1"  
-                      onChange={this.handleOptionChange} />
+                       />
                       Great
                 </label>
           
                 <label>
                 <input onChange={this.props.onChange} type="radio" value="option2"  
-                onChange={this.handleOptionChange} />
+                 />
                 Good
                 </label>
 
                 <label>
                 <input onChange={this.props.onChange} type="radio" value="option3"  
-                onChange={this.handleOptionChange} />
+                />
                 OK
                 </label>
 
                 <label>
                 <input onChange={this.props.onChange} type="radio" value="option4"  
-                onChange={this.handleOptionChange} />
+                />
                 Ill
                 </label>
                 </div>
@@ -75,25 +75,25 @@ class PreSession extends Component {
                 <label>
                     Overall, I feel that my health is:
                     <input onChange={this.props.onChange} type="radio" value="option1"  
-                      onChange={this.handleOptionChange} />
+                       />
                       Very Good
                 </label>
           
                 <label>
                 <input onChange={this.props.onChange} type="radio" value="option2"  
-                onChange={this.handleOptionChange} />
+                />
                 Good
                 </label>
 
                 <label>
                 <input onChange={this.props.onChange} type="radio" value="option3"  
-                onChange={this.handleOptionChange} />
+                />
                 Bad
                 </label>
 
                 <label>
                 <input onChange={this.props.onChange} type="radio" value="option4"  
-                onChange={this.handleOptionChange} />
+                />
                 Very Bad
                 </label>
                 </div>

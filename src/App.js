@@ -16,35 +16,18 @@ class App extends Component {
       {
         question: 'Natto is a commonly eaten breakfast food in Japan, typically served over rice. What is it?',
         answers: ['Fermented soybeans', 'Seaweed salad', 'Dried bonito flakes', 'An Omelet'],
-        questionType: 'select'
+        questionType: 'radio'
       },
+      {
+        question: 'Is this working?',
+        answers: ['Fermented soybeans', 'Seaweed salad', 'Dried bonito flakes', 'An Omelet'],
+        questionType: 'select'
+      },      
       {
         question: 'Is this working?',
         answers: ['Fermented soybeans', 'Seaweed salad', 'Dried bonito flakes', 'An Omelet'],
         questionType: 'text'
       },
-      {
-        question: 'Natto is a commonly eaten breakfast food in Japan, typically served over rice. What is it?',
-        answers: ['Fermented soybeans', 'Seaweed salad', 'Dried bonito flakes', 'An Omelet'],
-        questionType: 'select'
-      },
-      {
-        question: 'Is this working?',
-        answers: ['Fermented soybeans', 'Seaweed salad', 'Dried bonito flakes', 'An Omelet'],
-        questionType: 'text'
-      },
-      {
-        question: 'Natto is a commonly eaten breakfast food in Japan, typically served over rice. What is it?',
-        answers: ['Fermented soybeans', 'Seaweed salad', 'Dried bonito flakes', 'An Omelet'],
-        questionType: 'select'
-      },
-      {
-        question: 'Is this working?',
-        answers: ['Fermented soybeans', 'Seaweed salad', 'Dried bonito flakes', 'An Omelet'],
-        questionType: 'text'
-      },
-      
-      
     ],
     
     currentIndex: 0,
@@ -53,7 +36,6 @@ class App extends Component {
   questionOnSubmit=(event)=>{
     console.log('It works')
     console.log(event)
-    event.preventDefault();
     this.setState({currentIndex: this.state.currentIndex +1});
   }
 
@@ -69,7 +51,7 @@ class App extends Component {
   render() {
     console.log(this.state);
     return (
-      <div>
+      <div className="App-layout">
         <Header
         title={"Passport to Lifetime Fitness"}
         />
@@ -77,6 +59,7 @@ class App extends Component {
         title={"PRE-SESSION"}
         description={"Please complete the following questions about you."}
         />
+        {(this.state.currentIndex < this.state.questions.length) && 
         <Question
         question={this.state.questions[this.state.currentIndex].question}
         answers={this.state.questions[this.state.currentIndex].answers}
@@ -84,8 +67,9 @@ class App extends Component {
 
         questionOnValueChange={this.questionOnValueChange}
         questionOnSubmit={this.questionOnSubmit}
-        />
-        
+        />}
+        {(this.state.currentIndex >= this.state.questions.length) && 
+        <p className="App-intro">Thanks</p>}
       </div>
     );
   }
